@@ -30,5 +30,11 @@ namespace OperazioniTriangoli
             double p = n1 + n2 + n3;
             return p;
         }
+        public static double Area(double n1, double n2, double n3)
+        {
+            double p = (n1 + n2 + n3) / 2;
+            double s = Math.Sqrt(p*(p - n1)*(p - n2)*(p - n3));
+            return s;
+        }
     }
 }

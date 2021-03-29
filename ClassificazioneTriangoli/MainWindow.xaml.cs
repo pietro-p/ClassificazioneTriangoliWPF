@@ -41,6 +41,7 @@ namespace ClassificazioneTriangoli
                     double lato3 = double.Parse(txtLato3.Text);
                     lblTipoTriangolo.Content = Gestione.Classificazione(lato1, lato2, lato3);
                     lblPerimetro.Content = Gestione.Perimetro(lato1, lato2, lato3);
+                    lblArea.Content = Gestione.Area(lato1, lato2, lato3);
                 }
                 catch (Exception ex)
                 {
